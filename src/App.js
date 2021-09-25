@@ -1,11 +1,11 @@
-import logo from './logo.svg';
-import {useState} from 'react';
-import Animation from "./animation/animate";
+
+
+
 import Maps from "./maps/maps";
 import './App.css';
 
 function App() {
-  let [value, setValue] = useState(true)
+
   return (
     <div className="App">
       <Maps />

@@ -1,28 +1,28 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, {  useEffect, useRef } from "react";
 import Stats from "stats-js";
 import * as THREE from "three";
 
 function Animation(props) {
   const box = useRef();
-  let container, stats;
+  let  stats;
   let camera, scene, raycaster, renderer, parentTransform, sphereInter;
 
   const pointer = new THREE.Vector2();
   const radius = 100;
   let theta = 0;
 
-  const lineGeometry = () => {
-    const material = new THREE.LineBasicMaterial( { color: 0xffffff } );
-    const points = [];
-    points.push(new THREE.Vector3(-10, 0, 0));
-    points.push(new THREE.Vector3(0, 10, 0));
-    points.push(new THREE.Vector3(10, 0, 0));
+//   const lineGeometry = () => {
+//     const material = new THREE.LineBasicMaterial( { color: 0xffffff } );
+//     const points = [];
+//     points.push(new THREE.Vector3(-10, 0, 0));
+//     points.push(new THREE.Vector3(0, 10, 0));
+//     points.push(new THREE.Vector3(10, 0, 0));
 
-    const geometry = new THREE.BufferGeometry().setFromPoints(points);
+//     const geometry = new THREE.BufferGeometry().setFromPoints(points);
 
-    return (new THREE.Line( geometry, material ))
+//     return (new THREE.Line( geometry, material ))
 
-  }
+//   }
   function init() {
 
    
